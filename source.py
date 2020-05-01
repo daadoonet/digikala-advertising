@@ -34,10 +34,13 @@ except:
 
 
 intended = '3600000'
-if price <= intended:
-    print('wow the price of this product is fewer than you whant \n it is good time to buy it')
-else:
-    print('sorry it is too expensive yet')
+try:
+    if price <= intended:
+        print('wow the price of this product is fewer than you whant \n it is good time to buy it')
+    else:
+        print('sorry it is too expensive yet')
+except:
+    pass
 
 
 
