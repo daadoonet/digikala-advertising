@@ -14,22 +14,22 @@ except:
 
 
 
-#try:
-regex = r"^.*>\n(.*)"
-test_str = (str(prisehtml))
-matches = re.finditer(regex, test_str, re.MULTILINE)
-for matchNum, match in enumerate(matches, start=1):
-    for groupNum in range(0, len(match.groups())):
-        groupNum = groupNum + 1
-        price = match.groups()
-#print(price)
-price = unidecode(price[0])
-price = price.strip()
-print('the price of this product is %s' %(price) )
-price = price.replace(',','')
-#print(price)
-#except:
-#    print("soory digikala don't have this product")
+try:
+    regex = r"^.*>\n(.*)"
+    test_str = (str(prisehtml))
+    matches = re.finditer(regex, test_str, re.MULTILINE)
+    for matchNum, match in enumerate(matches, start=1):
+        for groupNum in range(0, len(match.groups())):
+            groupNum = groupNum + 1
+            price = match.groups()
+    #print(price)
+    price = unidecode(price[0])
+    price = price.strip()
+    print('the price of this product is %s' %(price) )
+    price = price.replace(',','')
+    #print(price)
+except:
+    print("soory digikala don't have this product")
 
 
 
