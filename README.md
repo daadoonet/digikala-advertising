@@ -3,6 +3,9 @@ request to digikala and get price of some thing then compair it with intended pr
 
 
 #TODO find some server to run program evry half-hour
+
 #TODO send e-mail to user if price <= intended 
+
 #TODO get input
+
 #TODO make graphical interface
