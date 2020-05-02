@@ -6,6 +6,6 @@ request to digikala and get price of some thing then compair it with intended pr
 
 - [ ] send e-mail to user if price <= intended 
 
-- [ ] get input
+- [x] get input
 
 - [ ] make graphical interface
