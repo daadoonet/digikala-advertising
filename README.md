@@ -4,7 +4,7 @@ request to digikala and get price of some thing then compair it with intended pr
 # TODO
 - [ ] find some server to run program evry half-hour
 
-- [ ] send e-mail to user if price <= intended 
+- [x] send e-mail to user if price <= intended 
 
 - [x] get input
 
