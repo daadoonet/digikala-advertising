@@ -5,6 +5,8 @@ from unidecode import unidecode
 import smtplib
 
 def send_email():
+    my_email = 'digi.ad.dado@gmail.com'
+    my_email_password = 'dijidado1234'
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
@@ -18,13 +20,9 @@ url = input('please enter url of your product page on digikala: ')
 if url == '-1':
     url = 'https://www.digikala.com/product/dkp-2105089/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-a30s-sm-a307fnds-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-64-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA'
     intended = '3600000'
-    my_email = 'diji.ad.dado@gmail.com'
-    my_email_password = 'dijivado1234'
     receivers = 'a.asgarian2@gmail.com'
 else:
     intended = input('please enter intended price: ')
-    my_email = input('please enter your email: ')
-    my_email_password = input('please enter your email password: ')
     receivers = input('please enter resivers email: ')
 #url = 'https://www.digikala.com/product/dkp-2105089/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-a30s-sm-a307fnds-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-64-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA'
 #url = 'https://www.digikala.com/product/dkp-2172577/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%DA%AF-%D9%85%D8%AF%D9%84-galaxy-a30s-sm-a307fnds-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-128-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA'
